@@ -11,7 +11,7 @@ class RegisterProviders
     {
         $this->data = $data;
     }
-
+    
     public function process(?Container $container)
     {
         $providers = [];
@@ -40,8 +40,6 @@ class RegisterProviders
             
     }
 
-    
-    
     private function isInstance(object $provider,string $providerClass)
     {
         if(!$provider instanceof ServiceProviders)
